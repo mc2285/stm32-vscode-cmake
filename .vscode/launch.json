@@ -11,7 +11,7 @@
             "executable": "${command:cmake.launchTargetPath}",
             "device": "STM32H753ZIT6",
             "svdFile": "/opt/STM32CubeProgrammer/SVD/STM32H753.svd",
-            "gdbPath": "/usr/bin/gdb-multiarch",
+            "gdbPath": "/usr/bin/arm-none-eabi-gdb",
             "configFiles": [
                 "interface/stlink.cfg",
                 "target/stm32h7x.cfg"
@@ -34,7 +34,7 @@
             "executable": "${command:cmake.launchTargetPath}",
             "device": "STM32H753ZIT6",
             "svdFile": "/opt/STM32CubeProgrammer/SVD/STM32H753.svd",
-            "gdbPath": "/usr/bin/gdb-multiarch",
+            "gdbPath": "/usr/bin/arm-none-eabi-gdb",
             "configFiles": [
                 "interface/stlink.cfg",
                 "target/stm32h7x.cfg"
