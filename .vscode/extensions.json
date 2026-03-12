@@ -1,7 +1,7 @@
 {
     "recommendations": [
         "marus25.cortex-debug", // Cortex-Debug for debugging
-        "ms-vscode.cpptools-extension-pack", // C/C++ extension pack
+        "llvm-vs-code-extensions.vscode-clangd", // C/C++ extension pack
         "ms-vscode.cmake-tools", // CMake Tools for CMake projects
         "mx-vscode.hexeditor", // Hex Editor for viewing binary files
     ]
