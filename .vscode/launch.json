@@ -9,18 +9,20 @@
             "interface": "swd",
             "cwd": "${workspaceFolder}",
             "executable": "${command:cmake.launchTargetPath}",
-            "device": "STM32H753ZIT6",
-            "svdFile": "/opt/STM32CubeProgrammer/SVD/STM32H753.svd",
+            "device": "STM32L476RGT",
+            "svdFile": "/opt/STM32CubeProgrammer/SVD/STM32L476.svd",
             "gdbPath": "/usr/bin/arm-none-eabi-gdb",
             "configFiles": [
                 "interface/stlink.cfg",
-                "target/stm32h7x.cfg"
+                "target/stm32l4x.cfg"
+            ],
+            "openOCDLaunchCommands": [
+                "program ${command:cmake.launchTargetPath} verify reset",
             ],
             "liveWatch": {
                 "enabled": true,
                 "samplesPerSecond": 3
             },
-            "stm32cubeprogrammer": "/opt/STM32CubeProgrammer/bin/STM32_Programmer_CLI",
             "objdumpPath": "/usr/bin/arm-none-eabi-objdump",
             "preLaunchTask": "CMake: build"
         },
@@ -32,18 +34,17 @@
             "interface": "swd",
             "cwd": "${workspaceFolder}",
             "executable": "${command:cmake.launchTargetPath}",
-            "device": "STM32H753ZIT6",
-            "svdFile": "/opt/STM32CubeProgrammer/SVD/STM32H753.svd",
+            "device": "STM32L476RGT",
+            "svdFile": "/opt/STM32CubeProgrammer/SVD/STM32L476.svd",
             "gdbPath": "/usr/bin/arm-none-eabi-gdb",
             "configFiles": [
                 "interface/stlink.cfg",
-                "target/stm32h7x.cfg"
+                "target/stm32l4x.cfg"
             ],
             "liveWatch": {
                 "enabled": true,
                 "samplesPerSecond": 3
             },
-            "stm32cubeprogrammer": "/opt/STM32CubeProgrammer/bin/STM32_Programmer_CLI",
             "objdumpPath": "/usr/bin/arm-none-eabi-objdump"
         }
     ]
